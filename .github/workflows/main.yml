@@ -20,6 +20,8 @@ jobs:
       run: ~/.local/bin/eb --version
     - name: deploy to ebs
       run: |
-        export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-        export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        ~/.local/bin/eb deploy TattleSearchServer-dev -l $GITHUB_SHA
+        mkdir ~/.aws
+        echo '[profile eb-cli]' >> ~/.aws/config
+        echo 'aws_access_key_id =' ${{ secrets.AWS_ACCESS_KEY_ID}} >> ~/.aws/config
+        echo 'aws_secret_access_key =' ${{ secrets.AWS_SECRET_ACCESS_KEY }} >> ~/.aws/config
+        cat ~/.aws/config
