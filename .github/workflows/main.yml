@@ -18,3 +18,5 @@ jobs:
       run: pip install awsebcli --upgrade --user
     - name: verify
       run: ~/.local/bin/eb --version
+    - name: deploy to ebs
+      run: ~/.local/bin/eb deploy TattleSearchServer-dev -l $GITHUB_SHA
