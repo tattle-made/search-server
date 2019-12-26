@@ -4,5 +4,3 @@ searchserver:
   - 80:80
   volumes:
   - /Users/dennygeorge/Documents/Tattle/playground/test-search-server/word2vec/db:/db-data
-word2vecdb:
-  image: nouchka/sqlite3:latest

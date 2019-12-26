@@ -1,12 +1,12 @@
 branch-defaults:
   master:
-    environment: TattleSearchServer-dev
+    environment: SearchServer-Dev
 environment-defaults:
-  TattleSearchServer-dev:
+  SearchServer-Dev:
     branch: null
     repository: null
 global:
-  application_name: tattle-search-server
+  application_name: search-server
   default_ec2_keyname: null
   default_platform: arn:aws:elasticbeanstalk:us-east-2::platform/Multi-container Docker
     running on 64bit Amazon Linux/2.18.0

@@ -18,11 +18,6 @@
                     "hostPort": 80
                 }
             ]
-        },
-        {
-            "essential": true,
-            "image": "nouchka/sqlite3:latest",
-            "name": "word2vec_db"
         }
     ],
     "family": "",
