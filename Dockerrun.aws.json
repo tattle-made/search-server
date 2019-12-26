@@ -12,6 +12,7 @@
                 }
             ],
             "memory": 128,
+            "memoryReservation": 256,
             "portMappings": [
                 {
                     "containerPort": 80,
