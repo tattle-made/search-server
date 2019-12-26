@@ -6,11 +6,11 @@ VERSION='0.3.2'
 
 print('hilo'+VERSION)
 
-conn = sqlite3.connect('/db-data/chinook.db')
+# conn = sqlite3.connect('/db-data/chinook.db')
 
-c = conn.cursor()
-c.execute("SELECT * FROM artists")
-print(c.fetchall())
+# c = conn.cursor()
+# c.execute("SELECT * FROM artists")
+# print(c.fetchall())
 
 
 # print(os.getcwd())
