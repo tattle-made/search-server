@@ -13,8 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Publish to Docker2
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: zenato/docker-action@master
       with:
-        name: tattletech/test-search-server
         username: tattlemade
         password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: tattletech/test-search-server
+        tag: 1.0
