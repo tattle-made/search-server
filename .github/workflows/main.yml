@@ -12,9 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Check Docker
-      run: |
-        docker login --username tattlemade --password ${{ secrets.DOCKER_PASSWORD }} docker.io
-        docker build -t search-server .
-        docker tag search-server tattletech/test-search-server:latest
-        docker push tattletech/test-search-server:latest
+    - name: Publish to Docker
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: myDocker/repository
+        username: tattlemade
+        password: ${{ secrets.DOCKER_PASSWORD }}
