@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Publish to Docker
+    - name: Publish to Docker2
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: tattletech/test-search-server
