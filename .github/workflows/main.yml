@@ -15,6 +15,6 @@ jobs:
     - name: Publish to Docker
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: myDocker/repository
+        name: tattletech/test-search-server
         username: tattlemade
         password: ${{ secrets.DOCKER_PASSWORD }}
