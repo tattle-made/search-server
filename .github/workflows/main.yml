@@ -15,7 +15,7 @@ jobs:
     - name: Publish to Docker2
       uses: zenato/docker-action@master
       with:
-        username: tattlemade
+        username: tattletech
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: tattletech/test-search-server
         tag: 1.0
