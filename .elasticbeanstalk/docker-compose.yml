@@ -1,5 +1,5 @@
 searchserver:
-  image: tattletech/test-search-server:eb77c2
+  image: tattletech/test-search-server:latest
   ports:
   - 80:80
   volumes:
