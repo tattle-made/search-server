@@ -13,4 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Check Docker
-      run: docker --version
+      run: |
+        docker login --username tattlemade --password ${{ secrets.DOCKER_PASSWORD }}
+        docker build -t search-server .
+        docker tag search-server tattletech/test-search-server:latest
+        docker push tattletech/test-search-server:latest
