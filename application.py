@@ -2,7 +2,7 @@ from flask import Flask, escape, request
 import sqlite3
 import os
 
-VERSION='0.3.5'
+VERSION='0.3.6'
 
 print('hilo'+VERSION)
 
