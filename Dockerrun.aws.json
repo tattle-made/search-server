@@ -4,7 +4,7 @@
         {
             "name": "search-server",
             "essential": true,
-            "image": "tattletech/test-search-server:latest",
+            "image": "tattletech/test-search-server",
             "mountPoints": [
                 {
                     "containerPath": "/db-data",
